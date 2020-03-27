@@ -1,56 +1,87 @@
-.register-container {
+.profile-container {
     width: 100%;
-    max-width: 1120px;
-    height: 100vh;
-    margin: 0 auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    max-width: 1180px;
+    padding: 0 30px;
+    margin: 32px auto;
 }
 
-.register-container .content {
-    width: 100%;
-    padding: 96px;
-    background: #f0f0f5;
-    box-shadow: rgba(0, 0, 0, 1);
+.profile-container header {
+    display: flex;
+    align-items: center;
+}
+
+.profile-container header span{
+    font-size: 20px;
+    margin-left: 24px;
+}
+
+.profile-container header img {
+    height: 64px;
+}
+
+.profile-container header a {
+    width: 260px;
+    margin-left: auto;
+    margin-top: 0;
+}
+
+.profile-container header button {
+    height: 60px;
+    width: 60px;
+    border-radius: 4px;
+    border: 1px solid #dcdce6;
+    background: transparent;
+    margin-left: 16px;
+    transition: border-color 0.2s;
+}
+
+.profile-container header button:hover{
+    border-color: #999;
+}
+
+.profile-container h1{
+    margin-top: 80px;
+    margin-bottom: 24px;
+}
+
+.profile-container ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+    list-style: none;
+}
+
+.profile-container ul li {
+    background: #fff;
+    padding: 24px;
     border-radius: 8px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: relative;
 }
 
-.register-container .content section {
-    width: 100%;
-    max-width: 380px;
+.profile-container ul li button {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    border: 0;
+    background: transparent;
 }
 
-.register-container .content section h1 {
-    margin: 64px 0 32px;
-    font-size: 32px;
+.profile-container ul li button:hover{
+    opacity: 0.8;
 }
 
-.register-container .content section p {
-    font-size: 18px;
+.profile-container ul li strong {
+    display: block;
+    margin-bottom: 16px;
+    color: #41414d;
+}
+
+.profile-container ul li p + strong {
+    margin-top: 32px;
+}
+
+.profile-container ul li p {
     color: #737388;
-    line-height: 32px;
+    line-height: 21px;
+    font-size: 16px;
 }
-
-.register-container .content form {
-    width: 100%;
-    max-width: 450px;
-}
-
-.register-container .content form input {
-    margin-top: 8px;
-}
-
-.register-container .content form .input-group{
-    display: flex;
-}
-
-.register-container .content form .input-group input + input{
-    margin-left: 8px;
-}
-
